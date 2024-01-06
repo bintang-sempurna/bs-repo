@@ -1,0 +1,89 @@
+
+
+.swiper-slide .imgHeroBanner{
+    width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+  
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
+    background-color: red;
+}
+
+.swiper-pagination.swiper-pagination-bullets-dynamic.swiper-pagination-bullets.swiper-pagination-horizontal {
+    left: 7%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    bottom: 2rem;
+}
+
+.swiper-button-next {
+    position: absolute;
+    width: 20px !important;
+    height: 20px !important;
+    background-color: #fff;
+    background-position: center center;
+    background-size: 100%;
+    border-radius: 50%;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    box-shadow: 0 1px 6px 0 rgba(49,53,59,0.12);
+    -ms-transform: translate(50%,-50%) rotate(90deg);
+}
+
+.swiper-button-next:after {
+    font-size: 12px !IMPORTANT;
+    color: #6e6e6e;
+
+}
+
+.swiper-button-prev {
+    position: absolute;
+    width: 20px !important;
+    height: 20px !important;
+    background-color: #fff;
+    background-position: center center;
+    background-size: 100%;
+    border-radius: 50%;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    box-shadow: 0 1px 6px 0 rgba(49,53,59,0.12);
+    -ms-transform: translate(50%,-50%) rotate(90deg);
+}
+
+.swiper-button-prev:after {
+    font-size: 12px !IMPORTANT;
+    color: #6e6e6e;
+}
+
+
+
+/* skelton batas */
+.skelton__Hero {
+    height: 330px;
+    border-radius: 20px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    background-size: 40px 100%;
+    background-repeat: no-repeat;
+    background-position: left -40px top 0;
+    -webkit-animation: shine 1s ease infinite;
+    animation: shine 1s ease infinite;
+}
+
+@keyframes shine {
+	to {
+        background-position: right -40px top 0;
+	}
+}
+
+/* span.lazy-load-image-background.blur.lazy-load-image-loaded {
+    width: 100%;
+    border-radius: 20px;
+} */
+
+span.lazy-load-image-background.blur.lazy-load-image-loaded {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

@@ -1,0 +1,79 @@
+.modpack-box_testimoni{
+    background: #fff;
+    transition: border-color 0.3s ease-in-out;
+    border-radius: 11px;
+    padding: 15px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.03) !important;
+    position: relative;
+    margin-bottom: 25px;
+    border: 1px solid #ecf0f2;
+}
+
+.modpack-box_testimoni .modpack-box-header_testimoni {
+    display: flex;
+}
+.modpack-box_testimoni .add-btn {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    /* background: #ff9800; */
+    color: #ff9800;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.modpack-box_testimoni .modpack-box-header_testimoni img {
+    width: 120px;
+    border-radius: 8px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.modpack-box_testimoni .modpack-box-header_testimoni .text {
+    margin-left: 14px;
+    padding-top: 14px;
+    padding-right: 1.2rem;
+    
+}
+
+.modpack-box_testimoni .modpack-box-tags {
+    display: flex;
+    margin-top: 7px;
+}
+
+.modpack-box_testimoni .modpack-box-tags span {
+    color: rgb(255, 160, 0);
+    margin-right: 8px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s ease 0s;
+    border: 1px solid rgb(255, 160, 0);
+}
+
+.modpack-box_testimoni .modpack-box-footer {
+    color: #9eacb2;
+}
+
+.modpack-box-footer.mb-0.coodiv-text-12.mt-6 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.coodiv-text-12.mb-0.mt-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.b_back {
+    background-color: #f8f9fa;
+}

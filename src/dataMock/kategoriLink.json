@@ -1,0 +1,62 @@
+[
+    {
+        "kategori":"Print A3+",
+        "links":"https://onlineprint.co.id/id/print-a3/products/",
+        "icon":"LuPrinter"
+    },
+    {
+        "kategori":"Kemasan",
+        "links":"https://onlineprint.co.id/id/label-dan-kemasan/products/",
+        "icon":"LuPackageCheck"
+    },
+    {
+        "kategori":"Buku",
+        "links":"https://onlineprint.co.id/id/buku/products/",
+        "icon":"LuBookOpen"
+
+    },
+    {
+        "kategori":"Souvenir",
+        "links":"https://onlineprint.co.id/id/souvenir-28/products/",
+        "icon":"LuSnowflake"
+
+    },
+    {
+        "kategori":"Textile",
+        "links":"https://onlineprint.co.id/id/print_kain/products/",
+        "icon":"LuShirt"
+
+    },
+    {
+        "kategori":"Sign & Display",
+        "links":"https://onlineprint.co.id/id/sign-and-display/products/",
+        "icon":"LuShirt"
+
+    },
+    {
+        "kategori":"Photobook",
+        "links":"https://onlineprint.co.id/id/photobook-30/products/",
+        "icon":"LuBookCopy"
+
+    },
+    {
+        "kategori":"Stationery",
+        "links":"https://onlineprint.co.id/id/stationery/products/",
+        "icon":"LuPencilRuler"
+
+    },
+    {
+        "kategori":"Umkm",
+        "links":"https://onlineprint.co.id/id/paket-umkm/products/",
+        "icon":"LuBackpack"
+
+    },
+    {
+        "kategori":"Special",
+        "links":"https://onlineprint.co.id/id/special-40/products/",
+        "icon":"LuBadgeCheck"
+
+    }
+    
+   
+]

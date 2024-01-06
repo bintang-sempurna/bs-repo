@@ -1,0 +1,45 @@
+[
+    {
+        "id" :1,
+        "img":"https://d3pyarv4eotqu4.cloudfront.net/onlineprin/images/products_gallery_images/POD14_04380918202304.jpg",
+        "alt":"product",
+        "name":"Print A3+"
+    },
+    {
+        "id" :2,
+        "img":"https://d3pyarv4eotqu4.cloudfront.net/onlineprin/images/product/BOD.jpg",
+        "alt":"product",
+        "name":"Buku"
+    },
+    {
+        "id" :3,
+        "img":"https://d3pyarv4eotqu4.cloudfront.net/onlineprin/images/product/UKM.jpg",
+        "alt":"product",
+        "name":"Kemasan"
+    },
+    {
+        "id" :4,
+        "img":"https://d3pyarv4eotqu4.cloudfront.net/onlineprin/images/product/SP_Nylon_125.jpg",
+        "alt":"product",
+        "name":"Display"
+    },
+    {
+        "id" :5,
+        "img":"https://d3pyarv4eotqu4.cloudfront.net/onlineprin/images/product/kain_kecil_09392217202105.jpg",
+        "alt":"product",
+        "name": "stationery"
+    },
+    {
+        "id" :6,
+        "img":"https://d3pyarv4eotqu4.cloudfront.net/onlineprin/images/product/PIYO_piring_.jpg",
+        "alt":"product",
+        "name":"Souvenir"
+    },
+    {
+        "id" :7,
+        "img":"https://d3pyarv4eotqu4.cloudfront.net/onlineprin/images/product/Spun_Bond.jpg",
+        "alt":"product",
+        "name":"Textile"
+    }
+
+]

@@ -1,0 +1,88 @@
+.img-onEvents{
+    max-width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn__regist_now {
+    position: relative;
+    display: block;
+    top: -2.5rem;
+}
+
+.parag-h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.text_world-h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+img.img_sitevisit_logo {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px;
+}
+
+.title_img {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+.img_event_thumbnail {
+    height: 150px;
+    object-fit: cover;
+}
+
+.button_regist.rounded-pill {
+    color: white;
+    background: #E30613;
+    letter-spacing: 0.9px;
+    font-weight: 400;
+    padding: 3px 20px 3px 20px;
+    font-size: 13px;
+}
+.button_regist_view.rounded-pill {
+    color: #E30613;
+    border: 1px solid #E30613;
+    letter-spacing: 0.9px;
+    font-weight: 400;
+    padding: 3px 20px 3px 20px;
+    font-size: 13px;
+}
+
+.btn.button_regist.rounded-pill:hover {
+    border: 1px solid #E30613;
+    color: #E30613;
+}
+
+.btn.button_regist_view.rounded-pill:hover {
+    border: 1px solid #E30613;
+    color: #E30613;
+}
+
+.icon_position {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 10px;
+}
+
+.true {
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.verified {
+    color: #0079FF;
+    position: fixed;
+}

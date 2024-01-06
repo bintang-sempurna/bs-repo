@@ -1,0 +1,40 @@
+.icon-small {
+    width: 24% !important;
+    margin-top: 0px;
+    padding: 8px;
+}
+
+a.btn-detail-produk.btn.btn-sm.rounded-pill.btn.btn-primary {
+    padding: 5px 15px 5px 15px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    background-color: var(--G500, #03AC0E);
+    border: none;
+    font-size: 9px;
+}
+/* .bg_All__Product{
+    background-image: url('/src/assets/img/contentStatic/all_Product.jpg');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+} */
+
+.modpack-box_all {
+    /* background: linear-gradient(#ff7d7d, #E30613);
+    transition: border-color 0.3s ease-in-out; */
+    border-radius: 11px;
+    padding: 5px;
+    position: relative;
+    margin-bottom: 25px;
+    height: 100%;
+}
+
+.img__all{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.title_product {
+    margin: 10px;
+}

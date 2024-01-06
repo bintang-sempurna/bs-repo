@@ -1,0 +1,110 @@
+
+
+
+@media (min-width: 320px) { 
+    .coba {
+        border-radius: 15px;
+        height: 250px;
+    }
+    .arrow-left {
+        left: 6rem;
+        top: 95%;
+        position: absolute;
+    }
+    .arrow-right {
+        right: 0rem;
+        top: 95%;
+        position: absolute;
+    }
+    .arrow-target {
+        right: 0rem;
+        top: 43%;
+        position: absolute;
+        
+    }
+    
+ }
+
+ @media (min-width: 576px) { 
+    .coba {
+        border-radius: 15px;
+        height: 500px;
+    }
+  }
+
+ @media (min-width: 768px) { 
+    .coba {
+        border-radius: 15px;
+        height: 350px;
+    }
+    .arrow-left {
+        left: 10rem;
+        top: 95%;
+        position: absolute;
+    }
+    .arrow-right {
+        right: 5rem;
+        top: 95%;
+        position: absolute;
+    }
+    .arrow-target {
+        right: -1rem;
+        top: 32%;
+        position: absolute;
+    }
+    
+  }
+
+
+@media (min-width: 992px) { 
+    .coba {
+        border-radius: 15px;
+        height: 500px;
+    }
+ }
+
+
+@media (min-width: 1200px) { 
+    .coba {
+        border-radius: 15px;
+        height: 500px;
+    }
+    .arrow-left {
+        left: 20rem;
+        top: 95%;
+        position: absolute;
+    }
+    .arrow-right {
+        right: 12rem;
+        top: 95%;
+        position: absolute;
+    }
+    .arrow-target {
+        right: -4rem;
+        top: 32%;
+        position: absolute;
+    }
+    
+ }
+
+
+ 
+.arrow-title {
+    display: block;
+    position: relative;
+    left: -1rem;
+    font-family: cursive;
+    font-size: 20px;
+    color: #0692e5;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+span.ux_title {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.drag-title{
+    font-size: 15px;
+}

@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .fab-wrapper {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 99;
+  }
+  .fab-checkbox {
+    display: none;
+  }
+  .fabButton {
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    background: #E30613;
+    box-shadow: 0px 5px 20px #0a151f47;
+    transition: all 0.3s ease;
+    z-index: 1;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #fb5f00;
+}
+
+  .fab-checkbox:checked ~ .fab:before {
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .fab:hover {
+    background: #d40715;
+    box-shadow: 0px 5px 20px 5px #d1051341;
+  }
+  
+  .fab-dots {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateX(0%) translateY(-50%) rotate(0deg);
+    opacity: 1;
+    animation: blink 3s ease infinite;
+    transition: all 0.3s ease;
+  }
+  
+  .fab-dots-1 {
+    left: 15px;
+    animation-delay: 0s;
+  }
+  .fab-dots-2 {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation-delay: 0.4s;
+  }
+  .fab-dots-3 {
+    right: 15px;
+    animation-delay: 0.8s;
+  }
+  
+  .fab-checkbox:checked ~ .fab .fab-dots {
+    height: 6px;
+  }
+  
+  .fab .fab-dots-2 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  
+  .fab-checkbox:checked ~ .fab .fab-dots-1 {
+    width: 32px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+  .fab-checkbox:checked ~ .fab .fab-dots-3 {
+    width: 32px;
+    border-radius: 10px;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%) rotate(-45deg);
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0.25;
+    }
+  }
+  
+  .fab-checkbox:checked ~ .fab .fab-dots {
+    animation: none;
+  }
+  
+  .fab-wheel {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  
+    width: 10rem;
+    height: 10rem;
+    transition: all 0.3s ease;
+    transform-origin: bottom right;
+    transform: scale(0);
+  }
+  
+  .fab-checkbox:checked ~ .fab-wheel {
+    transform: scale(1);
+  }
+  .fab-action {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    background: rgb(255 255 255);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.47);
+  }
+  
+  .fab-checkbox:checked ~ .fab-wheel .fab-action {
+    opacity: 1;
+  }
+  
+  .fab-action:hover {
+    background-color: #E30613;
+  }
+  
+  .fab-wheel .fab-action-1 {
+    right: -1rem;
+    top: 1.5rem;
+  }
+  
+  .fab-wheel .fab-action-2 {
+    right: 2.5rem;
+    top: 2rem;
+  }
+  .fab-wheel .fab-action-3 {
+    left: 2rem;
+    bottom: 2.3rem;
+  }
+  .fab-wheel .fab-action-4 {
+    left: 1rem;
+    bottom: -1rem;
+  }
+  
+
+  .icn___1 {
+    position: absolute;
+    top: -1.5rem;
+    font-size: 12px;
+    font-weight: 400;
+}
+  .icn___2 {
+    position: absolute;
+    top: -1.5rem;
+    font-size: 12px;
+    font-weight: 400;
+    left: -1rem;
+}
+.fab-action::before,
+.fab-action::after {
+  transform: scale(0);
+  position: absolute;
+  content: '';
+  top: -33px;
+  height: auto;
+  width: 60px;
+  background: black;
+  transform: translateX(-49%) translateY(-15%);
+  transition: transform 150ms;
+  transform-origin: bottom center;
+}
+
+.fab-action:hover::before {
+  content: attr(data-tooltip);
+  color: #fff;
+  padding: 5px 15px;
+  width: max-content;
+  background: #212529;
+  border-radius: 0.3rem;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  border-radius: 50px;
+}
+
+.fab-action:hover::before {
+  transform: scale(1);
+}
+
+.fab-action::after {
+  --translate-y: calc(-1 * var(--arrow-size));
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  transform-origin: top center;
+}

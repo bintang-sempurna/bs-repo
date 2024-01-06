@@ -1,0 +1,145 @@
+.container-breakpoint{
+    /* width: 1200px; */
+    margin: 0 auto;
+    columns: 6;
+    column-gap: 10px;
+}
+
+.container-breakpoint .box {
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 10px; */
+    overflow: hidden;
+}
+
+.container-breakpoint .box img:hover {
+    transform: translateY(1px) scale(1.055) translateZ(1);
+    box-shadow: 0 24px 100px rgba(138, 138, 138, 0.11),0 40px 46px rgba(56, 56, 56, 0.164);
+
+}
+
+
+.container-breakpoint .box img{
+    max-width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.paragraf-recap{
+    margin-top: 10px;
+    line-height: 1.5;
+    word-break: keep-all;
+    color: #343a40;
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+ }
+
+ .img___EventRecap___{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+ 
+ @media (max-width: 1200px) {
+     .breakpoint-right{
+        columns: 1;
+        /* width: calc(100% - 0px); */
+        box-sizing: border-box;
+     }
+ }
+ @media (max-width: 768px) {
+     .breakpoint-right{
+        columns: 1;
+       
+     }
+ }
+
+
+@media (max-width: 1200px) {
+    .container-breakpoint{
+        columns: 3;
+        width: calc(100% - 0px);
+        box-sizing: border-box;
+       
+    }
+}
+
+@media (max-width: 768px){
+    .container-breakpoint{
+        columns: 3;
+    }
+}
+
+@media (max-width: 480px){
+    .container-breakpoint{
+        columns: 2;
+
+    }
+    .container-breakpoint .box img{
+        max-width: 100%;
+    }
+}
+
+.recapArtic{
+ width: 100%;
+ height: 200px;
+ object-fit: cover;
+ border-radius: 15px;
+ -webkit-border-radius: 15px;
+ -moz-border-radius: 15px;
+ -ms-border-radius: 15px;
+ -o-border-radius: 15px;
+}
+
+.recapArticOne {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.title-artic{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+
+}
+.category-icon-recap {
+    background-color: #e9f9f2;
+    padding: 3px 10px 3px 10px;
+    border-radius: 50px;
+    color: #198754;
+    font-size: 12px;
+    border-radius: 50px;
+
+  }
+
+  .category-icon-siteVisite {
+    background-color: #f4eafb;
+    padding: 3px 10px 3px 10px;
+    border-radius: 50px;
+    color: #a71582;
+    font-size: 12px;
+    border-radius: 50px;
+}
+
+  .date-artic{
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #727272;
+  }

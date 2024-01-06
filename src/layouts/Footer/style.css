@@ -1,0 +1,7 @@
+/* a.icon-social i:hover {
+    color: red;
+} */
+
+a.icon-social:hover {
+    color: red;
+}

@@ -1,0 +1,53 @@
+[
+    {
+        "id":1,
+        "img": "https://bintangsempurna.co.id/testing/wbs/img/img-bs/klien/client-01.png",
+        "alt": "name"
+    },
+    {
+        "id":2,
+        "img": "https://bintangsempurna.co.id/testing/wbs/img/img-bs/klien/client-02.png",
+        "alt": "name"
+    },
+    {
+        "id":3,
+        "img": "https://bintangsempurna.co.id/testing/wbs/img/img-bs/klien/client-03.png",
+        "alt": "name"
+    },
+    {
+        "id":4,
+        "img": "https://bintangsempurna.co.id/testing/wbs/img/img-bs/klien/client-04.png",
+        "alt": "name"
+    },
+    {
+        "id":5,
+        "img": "https://bintangsempurna.co.id/testing/wbs/img/img-bs/klien/client-05.png",
+        "alt": "name"
+    },
+    {
+        "id":6,
+        "img": "https://bintangsempurna.co.id/testing/wbs/img/img-bs/klien/client-06.png",
+        "alt": "name"
+    },
+    {
+        "id":7,
+        "img": "https://bintangsempurna.co.id/testing/wbs/img/img-bs/klien/client-07.png",
+        "alt": "name"
+    },
+    {
+        "id":8,
+        "img": "https://bintangsempurna.co.id/testing/wbs/img/img-bs/klien/client-08.png",
+        "alt": "name"
+    },
+    {
+        "id":9,
+        "img": "https://bintangsempurna.co.id/testing/wbs/img/img-bs/klien/client-09.png",
+        "alt": "name"
+    },
+    {
+        "id":10,
+        "img": "https://bintangsempurna.co.id/testing/wbs/img/img-bs/klien/client-10.png",
+        "alt": "name"
+    }
+
+]

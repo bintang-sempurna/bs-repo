@@ -1,0 +1,66 @@
+[
+    {
+        "id":"1",
+        "img":"https://bintangsempurna.co.id/testing/wbs/img/img-bs/Award/lpdp.jpg",
+        "alt":"Award Lpdp",
+        "tittle":"tittle",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "date":"2023",
+        "category":"Prestasi"
+    },
+    {
+        "id":"2",
+        "img":"https://bintangsempurna.co.id/testing/wbs/img/img-bs/Award/Indonesia%20Tumbuh%20Indonesia%20Tangguh.jpg",
+        "alt":"Award Indonesia tumbuh indonesia tangguh",
+        "tittle":"tittle",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "date":"2023",
+        "category":"Prestasi"
+    },
+    {
+        "id":"3",
+        "img":"https://bintangsempurna.co.id/testing/wbs/img/img-bs/Award/Photobook.jpg",
+        "alt":"Award Photobook",
+        "tittle":"tittle",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "date":"2023",
+        "category":"Prestasi"
+    },
+    {
+        "id":"4",
+        "img":"https://bintangsempurna.co.id/testing/wbs/img/img-bs/Award/Personalized%20Mystery%20Box.jpg",
+        "alt":"Award Peronalize Mystery Box",
+        "tittle":"tittle",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "date":"2023",
+        "category":"Prestasi"
+    },
+    {
+        "id":"5",
+        "img":"https://bintangsempurna.co.id/testing/wbs/img/img-bs/Award/Personalized%20Mystery%20Box.jpg",
+        "alt":"Award Peronalize Mystery Box",
+        "tittle":"tittle",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "date":"2023",
+        "category":"Prestasi"
+    },
+    {
+        "id":"6",
+        "img":"https://bintangsempurna.co.id/testing/wbs/img/img-bs/Award/Personalized%20Mystery%20Box.jpg",
+        "alt":"Award Peronalize Mystery Box",
+        "tittle":"tittle",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "date":"2023",
+        "category":"Prestasi"
+    },
+    {
+        "id":"7",
+        "img":"https://bintangsempurna.co.id/testing/wbs/img/img-bs/Award/Personalized%20Mystery%20Box.jpg",
+        "alt":"Award Peronalize Mystery Box",
+        "tittle":"tittle",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "date":"2023",
+        "category":"Prestasi"
+    }
+
+]

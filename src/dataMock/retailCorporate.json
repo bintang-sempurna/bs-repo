@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "button": "Retail",
+        "image":"../assets/img/contentStatic/corporate.png",
+        "judul":"Banyak Produknya Melimpah Untungnya",
+        "title":"Kamu bisa memesan produk secara cepat atau produk yang kamu buat sendiri.",
+        "layanan1": "Layanan Cepat",
+        "layanan2": "Layanan Cepat",
+        "layanan3": "Lengkap",
+        "layanan4": "Loyalty Points",
+        "backlink": "https://www."
+    },
+    {
+        "id": 2,
+        "button": "Retail",
+        "image":"../assets/img/contentStatic/store.webp",
+        "judul":"Banyak Produknya Melimpah Untungnya",
+        "title":"Kamu bisa memesan produk secara cepat atau produk yang kamu buat sendiri.",
+        "layanan1": "Layanan Cepat",
+        "layanan2": "Layanan Cepat",
+        "layanan3": "Lengkap",
+        "layanan4": "Loyalty Points",
+        "backlink": "https://www."
+        }
+]

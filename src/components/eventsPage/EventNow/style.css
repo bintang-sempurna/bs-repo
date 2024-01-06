@@ -1,0 +1,21 @@
+.col-lg-6.col-12.side-apps-details {
+    position: relative;
+    display: block;
+    top: 0;
+    bottom: 0;
+    margin-top: 40px;
+}
+
+
+
+
+@media (min-width: 320px) { 
+    .pb-30, .py-30 {
+        padding-bottom: 1rem!important;
+    }
+ }
+@media (min-width: 1200px) { 
+    .pb-30, .py-30 {
+        padding-bottom: 9.5rem!important;
+    }
+ }

@@ -1,0 +1,53 @@
+
+.full__Wide_notfound{
+    height: 80vh;
+}
+
+.Content_title{
+    height: 20vh;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+
+@media (min-width: 320px) { 
+    img.notFound__img {
+        width: 60%;
+        object-fit: cover;
+        padding-top: 8rem;
+    }
+    .title__h{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .title__p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+ }
+
+
+ @media (min-width: 768px) { 
+    img.notFound__img {
+        width:40%;
+        object-fit: cover;
+        padding-top: 5rem;
+    }
+  }
+
+  @media (min-width: 992px) { 
+    img.notFound__img {
+        width:30%;
+        object-fit: cover;
+        padding-top: 5rem;
+    }
+   }

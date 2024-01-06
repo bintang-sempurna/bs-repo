@@ -1,0 +1,41 @@
+.retail\&corporate {
+    padding: 4px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    position: relative;
+
+}
+
+button.btn-option.btn.btn-primary{
+    margin: 7px;
+    background: #150035;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+}
+
+
+.content{
+    display: none;
+}
+.show-content{
+    display: block;
+}
+
+
+
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    button.btn-option.btn.btn-primary{
+        width: 150px;
+    }
+ }
+ .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: #000;
+    background-color: #fff;
+    /* border-color: #1e11db; */
+}
