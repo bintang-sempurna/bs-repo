@@ -5,10 +5,16 @@ import sldKaT from "../../../dataMock/kategoriLink.json";
 import SliderVideo from "../../allslider/SliderVideo";
 import FooterContentOp from "../../statik/FooterContentOp";
 import AllRecap from "../../AllEvent";
+import {Helmet} from "react-helmet";
 
 function RecapPage() {
   return (
     <>
+     <Helmet>
+                <meta charSet="utf-8" />
+                <title>Event Recap </title>
+                <link rel="canonical" href="#" />
+            </Helmet>
       <section className="py-25 position-relative bg-red-bs mt-20">
         <div className="container">
           <div className="row justify-content-between">

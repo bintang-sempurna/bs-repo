@@ -1,9 +1,15 @@
 import React from "react";
 import FormContact from "./FormContact";
+import {Helmet} from "react-helmet";
 
 const Contact = () => {
   return (
     <>
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>Hubungi Kami </title>
+                <link rel="canonical" href="#" />
+            </Helmet>
       <div
         id="coodiv-header"
         className="d-flex mx-auto flex-column subpages-header moon-edition mt-20"

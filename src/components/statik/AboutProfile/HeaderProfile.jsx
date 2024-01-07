@@ -1,10 +1,16 @@
 import React from "react";
 import "./style.css";
 import VideoTentangKami from "../../modal/ModalTentangKami";
+import {Helmet} from "react-helmet";
 
 const HeaderProfile = () => {
   return (
     <>
+     <Helmet>
+                <meta charSet="utf-8" />
+                <title>Profile</title>
+                <link rel="canonical" href="#" />
+            </Helmet>
       <section
         className="perlex-efect-section parallax-window padding-80-0 position-relative mt-20"
         data-parallax="scroll"

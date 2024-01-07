@@ -4,6 +4,7 @@ import Filter from "./Filter";
 import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./styles.css";
+import {Helmet} from "react-helmet";
 
 const ProductService = () => {
   const navigate = useNavigate();
@@ -32,7 +33,14 @@ const ProductService = () => {
   const baseUrl = "https://testrapi.bintangsempurna.co.id";
 
   return (
+
+    
     <div className="container mt-5">
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Product </title>
+                <link rel="canonical" href="#" />
+            </Helmet>
       <Filter
         category={category}
         setFiltered={setFiltered}

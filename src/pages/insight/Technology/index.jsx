@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getTechnology } from "../../../store/product/action";
 import SliderVideo from "../../../components/allslider/SliderVideo";
+import {Helmet} from "react-helmet";
 
 const TechnologyPage = () => {
   const dispatch = useDispatch();
@@ -76,6 +77,11 @@ const TechnologyPage = () => {
 
   return (
     <>
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>Technology Printing</title>
+                <link rel="canonical" href="#" />
+            </Helmet>
       <ScrollToTop />
       <section className="py-25 position-relative bg-red-bs mt-20">
         <div className="container">

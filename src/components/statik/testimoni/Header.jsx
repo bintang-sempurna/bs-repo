@@ -2,10 +2,16 @@ import React from "react";
 import imgHeaderTestimoni from "../../../assets/img/contentStatic/content_img5.png";
 import { FaPlayCircle } from "react-icons/fa";
 import VideoTestimoni from "../../modal/ModalTestimoni";
+import {Helmet} from "react-helmet";
 
 const HeaderTestimoni = () => {
   return (
     <>
+<Helmet>
+                <meta charSet="utf-8" />
+                <title>Testimonial</title>
+                <link rel="canonical" href="#" />
+            </Helmet>
       <section className=" pb-5 mt-20">
         <div className="container">
           <div className="row justify-content-start">

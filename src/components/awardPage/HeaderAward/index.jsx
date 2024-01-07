@@ -1,10 +1,16 @@
 import React from "react";
 import ImgAwardPage from "../../../assets/img/contentStatic/award in paris.png";
 import VideoAward from "../../modal/ModalAward";
+import {Helmet} from "react-helmet";
 
 const AwardHeader = () => {
   return (
     <>
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>Award</title>
+                <link rel="canonical" href="#" />
+            </Helmet>
       <section className="pb-5 mt-20">
         <div className="container">
           <div className="row justify-content-start">

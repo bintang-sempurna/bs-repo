@@ -6,10 +6,16 @@ import mediaPostPress from "./../../../assets/img/svg/post-press.svg";
 import SliderKategori from "../../../components/allslider/SliderKategori";
 import sldKaT from "../../../dataMock/kategoriLink.json";
 import ScrollToTop from "../../../components/ScrollTop";
+import {Helmet} from "react-helmet";
 
 const KnowledgePage = () => {
   return (
     <>
+     <Helmet>
+                <meta charSet="utf-8" />
+                <title> Knowledge Printing</title>
+                <link rel="canonical" href="#" />
+            </Helmet>
       <ScrollToTop />
       <section className="py-25 position-relative bg-red-bs mt-20">
         <div className="container">

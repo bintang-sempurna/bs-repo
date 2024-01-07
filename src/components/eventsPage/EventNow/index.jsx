@@ -4,6 +4,7 @@ import image1 from "../../../assets/img/contentStatic/image1.png";
 import image2 from "../../../assets/img/contentStatic/image2.png";
 import { Outlet, Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import {Helmet} from "react-helmet";
 
 import "./style.css";
 import SliderEvents from "../../allslider/SliderEvents";
@@ -17,6 +18,11 @@ const EventNow = () => {
 
   return (
     <>
+     <Helmet>
+                <meta charSet="utf-8" />
+                <title>Event Now</title>
+                <link rel="canonical" href="#" />
+            </Helmet>
       <section className="mt-20 lines-bg-section position-relative coodiv-z-index-2 ">
         <div className="container">
           <div className="row row justify-content-between py-30">

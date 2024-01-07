@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Filter from "./Filter";
 import { motion } from "framer-motion";
 import "./styles.css";
+import {Helmet} from "react-helmet";
 
 const AllBlog = () => {
   const navigate = useNavigate();
@@ -32,6 +33,11 @@ const AllBlog = () => {
 
   return (
     <div className="container mt-25">
+    <Helmet>
+    <meta charSet="utf-8" />
+    <title> Blog</title>
+    <link rel="canonical" href="#" />
+</Helmet>
       <Filter
         category={category}
         setFiltered={setFiltered}
