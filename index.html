@@ -89,6 +89,22 @@
       });
     </script>
 
+    <!-- LinkedIn meta tags -->
+    <meta property="og:title" content="Judul Konten Anda" />
+    <meta property="og:description" content="Deskripsi singkat konten Anda" />
+    <meta property="og:url" content="URL Halaman Anda" />
+    <meta property="og:image" content="" id="linkedin-image" />
+    <script>
+      // JavaScript to dynamically set LinkedIn Image
+      document.addEventListener("DOMContentLoaded", function () {
+        // Replace 'your-image-generator-url' with the URL of your image generation script
+        var imageUrl = "your-image-generator-url";
+        document
+          .getElementById("linkedin-image")
+          .setAttribute("content", imageUrl);
+      });
+    </script>
+
     <!-- End Google Tag Manager -->
     <!-- <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
