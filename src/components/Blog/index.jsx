@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Filter from "./Filter";
 import { motion } from "framer-motion";
 import "./styles.css";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const AllBlog = () => {
   const navigate = useNavigate();
@@ -21,8 +21,12 @@ const AllBlog = () => {
     setFiltered(product.data);
   };
 
-  const handleProductDetail = (data) => {
-    navigate(`/insight/blog/${data}`);
+  // const handleProductDetail = (data) => {
+  //   navigate(`/insight/blog/${data}`);
+  // };
+
+  const handleProductDetail = (id, category) => {
+    navigate(`/insight/blog/${id}?populate=${category}`);
   };
 
   useEffect(() => {
@@ -33,11 +37,11 @@ const AllBlog = () => {
 
   return (
     <div className="container mt-25">
-    <Helmet>
-    <meta charSet="utf-8" />
-    <title> Blog</title>
-    <link rel="canonical" href="#" />
-</Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Blog</title>
+        <link rel="canonical" href="#" />
+      </Helmet>
       <Filter
         category={category}
         setFiltered={setFiltered}
@@ -56,7 +60,8 @@ const AllBlog = () => {
             key={data.id}
             layout
             className="mItem"
-            onClick={() => handleProductDetail(data.id)}
+            // onClick={() => handleProductDetail(data.id)}
+            onClick={() => handleProductDetail(data.id, data.attributes.slug)}
           >
             <img
               src={

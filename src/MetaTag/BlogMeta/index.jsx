@@ -19,7 +19,6 @@ const BlogMeta = () => {
 
   const renderMetaBlog = () => {
     return entities.map((data) => {
-      // Check if data.attributes.blogMeta is present before accessing metaTitle
       const metaTitle = data.attributes.blogMeta
         ? data.attributes.blogMeta.metaTitle
         : "";
@@ -30,6 +29,10 @@ const BlogMeta = () => {
 
       const keywords = data.attributes.blogMeta
         ? data.attributes.blogMeta.keywords
+        : "";
+
+      const imageUrl = data.attributes.image
+        ? data.attributes.image.data.attributes.formats.thumbnail.url
         : "";
 
       return (
@@ -43,12 +46,11 @@ const BlogMeta = () => {
           <meta name="description" content={metaDesc} />
           <meta name="keywords" content={keywords} />
           <meta name="robots" content="index, follow" />
-          <meta name="author" content="Nama Penulis" />
-          <link rel="canonical" href="URL-Artikel-Anda" />
+          <meta name="author" content="Bintang Sempurna" />
+          <link rel="canonical" href={baseUrl} />
           <meta property="og:title" content={metaTitle} />
-          <meta property="og:description" content={metaDesc} />
-          <meta property="og:image" content="URL-Gambar-Utama" />
-          <meta property="og:url" content="URL-Artikel-Anda" />
+          <meta property="og:image" content={baseUrl + imageUrl.substring(1)} />
+          <meta property="og:url" content={baseUrl} />
           <meta property="og:type" content="blog" />
           <meta property="og:site_name" content={baseUrl} />
         </Helmet>
