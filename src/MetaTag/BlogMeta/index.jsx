@@ -15,6 +15,8 @@ const BlogMeta = () => {
     fectApi();
   }, []);
 
+  const baseUrl = import.meta.env.VITE_APP_BASEURL;
+
   const renderMetaBlog = () => {
     return entities.map((data) => {
       // Check if data.attributes.blogMeta is present before accessing metaTitle
@@ -32,15 +34,23 @@ const BlogMeta = () => {
 
       return (
         <Helmet key={data.id}>
-          <title>{data.attributes.title}</title>
-          <meta name="description" content={metaTitle}></meta>
-          <meta name="title" content=""></meta>
-          <meta name="robots" content="index, follow"></meta>
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
-          ></meta>
-          <meta name="author" content="PT Bintang Sempurna"></meta>
+          />
+          <title>{metaTitle}</title>
+          <meta name="title" content={metaTitle} />
+          <meta name="description" content={metaDesc} />
+          <meta name="keywords" content={keywords} />
+          <meta name="robots" content="index, follow" />
+          <meta name="author" content="Nama Penulis" />
+          <link rel="canonical" href="URL-Artikel-Anda" />
+          <meta property="og:title" content={metaTitle} />
+          <meta property="og:description" content={metaDesc} />
+          <meta property="og:image" content="URL-Gambar-Utama" />
+          <meta property="og:url" content="URL-Artikel-Anda" />
+          <meta property="og:type" content="blog" />
+          <meta property="og:site_name" content={baseUrl} />
         </Helmet>
       );
     });
