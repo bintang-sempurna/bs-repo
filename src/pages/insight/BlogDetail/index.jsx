@@ -5,12 +5,14 @@ import { getDetail } from "../../../store/product/action";
 import FooterContentOp from "../../../components/statik/FooterContentOp";
 import ReactMarkdown from "react-markdown";
 import SliderBlog from "../../../components/allslider/SliderBlog";
+import { Helmet } from "react-helmet";
 
 import "./styles.css";
 // skelton
 import ScrollToTop from "../../../components/ScrollTop";
 import SkelBanner from "../../../components/skelton/banner/image";
 import SkelParagraf from "../../../components/skelton/paragraf";
+import BlogMeta from "../../../MetaTag/BlogMeta";
 
 const BlogDetails = () => {
   const navigate = useNavigate();
@@ -29,20 +31,10 @@ const BlogDetails = () => {
 
   const baseUrl = import.meta.env.VITE_APP_BASEURL;
 
-  // const renderTag = () => {
-  //   return entities.map((data) => {
-  //     return (
-  //       <span key={data.id} className="tag_categories">
-  //         {data.attributes.categories.data[0].attributes.title}
-  //       </span>
-  //     );
-  //   });
-  // };
-
   return (
     <>
       <ScrollToTop />
-
+      <BlogMeta />
       <section className="up-top mt-25">
         <div className="container">
           <div className="row">
