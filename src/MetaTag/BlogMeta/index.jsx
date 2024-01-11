@@ -6,53 +6,49 @@ import { getAll } from "../../store/product/action";
 const BlogMeta = () => {
   const { entities } = useSelector((state) => state.blog);
   const dispatch = useDispatch();
-
-  const fectApi = async () => {
-    dispatch(getAll());
-  };
+  const baseUrl = import.meta.env.VITE_APP_BASEURL;
 
   useEffect(() => {
-    fectApi();
-  }, []);
+    const fetchApi = async () => {
+      dispatch(getAll());
+    };
 
-  const baseUrl = import.meta.env.VITE_APP_BASEURL;
+    fetchApi();
+  }, [dispatch]);
 
   const renderMetaBlog = () => {
     return entities.map((data) => {
-      const metaTitle = data.attributes.blogMeta
-        ? data.attributes.blogMeta.metaTitle
-        : "";
-
-      const metaDesc = data.attributes.blogMeta
-        ? data.attributes.blogMeta.metaDescription
-        : "";
-
-      const keywords = data.attributes.blogMeta
-        ? data.attributes.blogMeta.keywords
-        : "";
-
-      const imageUrl = data.attributes.image
-        ? data.attributes.image.data.attributes.formats.thumbnail.url
-        : "";
+      const metaTitle = data.attributes.blogMeta?.metaTitle || "";
+      const metaDesc = data.attributes.blogMeta?.metaDescription || "";
 
       return (
         <Helmet key={data.id}>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
           <title>{metaTitle}</title>
-          <meta name="title" content={metaTitle} />
           <meta name="description" content={metaDesc} />
-          <meta name="keywords" content={keywords} />
-          <meta name="robots" content="index, follow" />
-          <meta name="author" content="Bintang Sempurna" />
-          <link rel="canonical" href={baseUrl} />
-          <meta property="og:title" content={metaTitle} />
-          <meta property="og:image" content={baseUrl + imageUrl.substring(1)} />
-          <meta property="og:url" content={baseUrl} />
-          <meta property="og:type" content="blog" />
-          <meta property="og:site_name" content={baseUrl} />
+          <meta name="og:url" content={`${baseUrl}api/blogs/${data.id}`} />
+          {/* <meta name="page-type" content={metaTitle} data-rh="true" />
+          <meta name="title" content={metaTitle} data-rh="true" />
+          <meta name="description" content={metaDesc} data-rh="true" />
+          <meta name="robots" content="index, follow" data-rh="true" />
+          <meta property="og:title" content={metaTitle} data-rh="true" />
+          <meta property="og:description" content={metaDesc} data-rh="true" />
+          <meta
+            property="og:image"
+            content={baseUrl + imageUrl.substring(1)}
+            data-rh="true"
+          />
+          <meta property="og:type" content="Website" data-rh="true" />
+          <meta property="og:site_name" content="Blog" data-rh="true" />
+          <meta property="og:url" content={postUrl} data-rh="true" />
+          <meta property="og:image:width" content="1200" data-rh="true" />
+          <meta property="og:image:height" content="630" data-rh="true" />
+
+          <meta name="google" content="nositelinkssearchbox" />
+          <meta name="google" content="nopagereadaloud" />
+          <meta name="robots" content="notranslate" />
+          <meta name="googlebot" content="notranslate" />
+          <meta http-equiv="refresh" content="...;url=..." />
+          <meta name="viewport" content="..." /> */}
         </Helmet>
       );
     });

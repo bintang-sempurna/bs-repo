@@ -15,6 +15,8 @@ export const productSlice = createSlice({
         createdAt: "",
         updatedAt: "",
         publishedAt: "",
+        id_categories: "",
+        alt: "",
         image: {
           data: {
             attributes: {
@@ -34,12 +36,18 @@ export const productSlice = createSlice({
             },
           },
         },
-        modes: {
+        mode: {
           data: {
             attributes: {
               title: "",
             },
           },
+        },
+        blogMeta: {
+          metaTitle: "",
+          metaDescription: "",
+          keywords: "",
+          preventIndexing: "",
         },
       },
     },
