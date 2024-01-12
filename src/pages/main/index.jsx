@@ -13,10 +13,12 @@ import ScrollToTop from "../../components/ScrollTop";
 import ContentKaumDinamis from "../../components/statik/ContentKaumDinamis";
 import ContentService from "../../components/statik/ContentService";
 import FooterContent from "../../components/statik/FooterContentEvents";
+import Home from "../../MetaTag/Home";
 
 function MainPage() {
   return (
     <>
+      <Home />
       <ScrollToTop />
       <SliderHero />
       <TemukanSec />

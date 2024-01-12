@@ -11,10 +11,10 @@ const Memberpage = () => {
         <div className="row justify-content-center">
           <div className="col-sm detail-apps">
             <div className="heading-apps ">
-              <h2 className="coodiv-text-3 white-font">
+              <h1 className="coodiv-text-3 white-font">
                 Untung Lebih Banyak <br />
                 Jadi Sobat Bintang
-              </h2>
+              </h1>
             </div>
             {/* <a
               href="https://play.google.com/store/apps/details?id=id.loyal.bintangsempurna&hl=en"

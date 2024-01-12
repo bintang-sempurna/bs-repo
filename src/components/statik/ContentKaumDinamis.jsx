@@ -77,9 +77,9 @@ const ContentKaumDinamis = () => {
                 >
                   PT. Bintang Sempurna
                 </p>
-                <h2 className="coodiv-text-4 font-weight-bold">
+                <h1 className="coodiv-text-4 font-weight-bold">
                   Perjalanan Bintang Sempurna
-                </h2>
+                </h1>
                 <div className="line-color-50%" />
                 <p className="content_text_author_description_p">
                   Dimulai dari sebuah tempat fotokopi kini berkembang menjadi

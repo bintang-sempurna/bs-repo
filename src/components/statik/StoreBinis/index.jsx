@@ -76,7 +76,7 @@ const TabContent1 = ({ title, description, image }) => (
 const TabContent2 = ({ title, description, image }) => (
   <Row>
     <Col lg={6} xs={12}>
-      <h2 className="coodiv-text-4 white-font">{title}</h2>
+      <h3 className="coodiv-text-4 white-font">{title}</h3>
       <div className="line-color-white50%"></div>
       <p className="content_text_author_description_p white-font">
         {description}
@@ -123,9 +123,9 @@ const StoreBisnis = () => {
   return (
     <>
       <section className="bg-default-2 position-relative py-20">
-        <h2 className="coodiv-text-4 text-center white-font">
+        <h1 className="coodiv-text-4 text-center white-font">
           Kebutuhan Anda, Prioritas Kami
-        </h2>
+        </h1>
         <div className="d-flex justify-content-center">
           <div className="retail-corporate mb-5 mt-5">
             <Row>

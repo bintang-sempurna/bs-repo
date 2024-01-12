@@ -35,9 +35,9 @@ const LebihCepat = () => {
                 >
                   onlineprint.co.id
                 </p>
-                <h2 className="coodiv-text-4 font-weight-bold">
+                <h1 className="coodiv-text-4 font-weight-bold">
                   Cetak Praktis Buat Kaum Dinamis
-                </h2>
+                </h1>
                 <div className="line-color-50%" />
                 <p className="content_text_author_description_p">
                   Cetak darimana saja, kapan saja dan apa saja yang Anda

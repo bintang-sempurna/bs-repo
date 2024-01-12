@@ -11,9 +11,9 @@ const ContentService = () => {
       <section className="py-5 ">
         <img src={ElipsNih} className="home-about-shape4" />
         <div className="container">
-          <h2 className="coodiv-text-4 font-weight-bold text-center">
+          <h1 className="coodiv-text-4 font-weight-bold text-center">
             Keutamaan Layanan kami
-          </h2>
+          </h1>
           <div className="line-color-100%-2grid mx-auto" />
           <div className="row justify-content-center mt-10">
             <div className="col-md-3 col-6">

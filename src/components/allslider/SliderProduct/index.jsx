@@ -44,9 +44,9 @@ const SliderProduct = () => {
                 }
               />
               <div className="title_product">
-                <h3 className="coodiv-text-8 font-weight-bold mb-0">
+                <h2 className="coodiv-text-8 font-weight-bold mb-0">
                   {data.attributes.title}
-                </h3>
+                </h2>
                 <p className="modpack-box-footer mb-0 coodiv-text-12 ">
                   Powered by :
                 </p>

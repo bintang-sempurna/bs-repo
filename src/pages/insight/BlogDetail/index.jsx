@@ -5,7 +5,7 @@ import { getDetail } from "../../../store/product/action";
 import FooterContentOp from "../../../components/statik/FooterContentOp";
 import ReactMarkdown from "react-markdown";
 import SliderBlog from "../../../components/allslider/SliderBlog";
-import { Helmet } from "react-helmet";
+import { TiTime } from "react-icons/ti";
 
 import "./styles.css";
 // skelton
@@ -71,7 +71,7 @@ const BlogDetails = () => {
                   <div className="tabel__border">
                     <p>
                       <span className="all__detail_tag">Blog</span>
-                      &nbsp; | &nbsp;
+                      &nbsp; | <TiTime /> &nbsp;
                       {new Date(data.attributes.publishedAt).toLocaleDateString(
                         "id-ID",
                         {

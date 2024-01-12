@@ -1,9 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom"; // Import Link
-import ImgStatic from "../../../assets/img/contentStatic/webp/content_img.webp";
 import svgStatic1 from "../../../assets/svg/elipse.svg";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import "./style.css";
 import ReactGA from "react-ga4";
@@ -51,15 +49,15 @@ const TemukanSec = () => {
 
             <div className="col-12">
               <div className="side-apps-details">
-                <h2 className="main-header-title coodiv-text-4 font-weight-bold text-center">
+                <h1 className="main-header-title coodiv-text-4 font-weight-bold text-center">
                   Temukan <span className="text__loop">{text}</span>
                   <span style={{ color: "red" }}>
                     <Cursor cursorStyle="|" />
                   </span>
-                </h2>
-                <h3 className="coodiv-text-4 font-weight-bold text-center">
+                </h1>
+                <h2 className="coodiv-text-4 font-weight-bold text-center">
                   Untuk Hasil Yang Lebih Menarik
-                </h3>
+                </h2>
 
                 <div className="line-color-100%-2grid mx-auto"></div>
                 {/* <div className="line-color-50% "></div> */}
