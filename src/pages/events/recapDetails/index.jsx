@@ -10,15 +10,14 @@ import ScrollToTop from "../../../components/ScrollTop";
 import SkelBanner from "../../../components/skelton/banner/image";
 import SkelParagraf from "../../../components/skelton/paragraf";
 
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import RecapMeta from "../../../MetaTag/RecapMeta";
 
 const RecapDetails = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const dispatch = useDispatch();
   const { data, loading } = useSelector((state) => state.recap);
-  const { entities } = useSelector((state) => state.recap);
+  // const { entities } = useSelector((state) => state.recap);
 
   const fetchDetailRecap = async (data) => {
     await dispatch(getRecapDetails(data));
@@ -30,30 +29,19 @@ const RecapDetails = () => {
 
   const baseUrl = import.meta.env.VITE_APP_BASEURL;
 
-  // const renderTag = () => {
-  //   return entities.map((data) => {
-  //     return (
-  //       <>
-  //         <span key={data.id} className="tag_categories ">
-  //           {data.attributes.categories.data[2].attributes.title}
-  //         </span>
-  //       </>
-  //     );
-  //   });
-  // };
-
-  // const renderTagRecap = () => {
-  //   return entities.map((data) => {
-  //     return (
-  //       <span className="tag_categories">{data.attributes.id_categories}</span>
-  //     );
-  //   });
-  // };
-
   return (
     <>
       <ScrollToTop />
-
+      <RecapMeta
+        title={data.attributes.SEO?.title || ""}
+        description={data.attributes.SEO?.description || ""}
+        url={
+          baseUrl +
+          data.attributes.image.data.attributes.formats.thumbnail?.url.substring(
+            1
+          )
+        }
+      />
       <section className="up-top mt-25">
         <div className="container">
           <div className="row">

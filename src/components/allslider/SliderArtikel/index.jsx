@@ -57,7 +57,6 @@ const SliderArtikel = () => {
         <SwiperSlide key={data.id}>
           <Card
             className="class__Card"
-            // onClick={() => recapDetail(data.id, data.attributes.slug)}
             onClick={() => recapDetail(data.id, data.attributes.slug)}
             style={{ cursor: "pointer" }}
           >

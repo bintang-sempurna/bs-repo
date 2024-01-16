@@ -1,23 +1,23 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useDispatch, useSelector } from "react-redux";
-import { getAll } from "../../store/product/action";
+import { getProduct } from "../../store/product/action";
 
-const BlogMeta = ({ title, description, url }) => {
-  const { entities } = useSelector((state) => state.blog);
+const MetaProduct = ({ title, description, url }) => {
+  const { entities } = useSelector((state) => state.product);
   const dispatch = useDispatch();
   const baseUrl = "www.bintangsempurna.co.id/";
   const urlFisrt = import.meta.env.VITE_APP_BASEURL;
 
   useEffect(() => {
     const fetchApi = async () => {
-      dispatch(getAll());
+      dispatch(getProduct());
     };
 
     fetchApi();
   }, [dispatch]);
 
-  const renderMetaBlog = () => {
+  const renderMetaProduct = () => {
     return entities.map((data) => {
       const metaTitle = title || "";
       const metaDesc = description || "";
@@ -46,7 +46,7 @@ const BlogMeta = ({ title, description, url }) => {
     });
   };
 
-  return <>{renderMetaBlog()}</>;
+  return <>{renderMetaProduct()}</>;
 };
 
-export default BlogMeta;
+export default MetaProduct;

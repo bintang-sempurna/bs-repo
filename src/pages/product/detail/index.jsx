@@ -13,6 +13,7 @@ import {
   WhatsappShareButton,
   WhatsappIcon,
 } from "react-share";
+import MetaProduct from "../../../MetaTag/ProductMeta";
 
 const ProductDetails = () => {
   const navigate = useNavigate();
@@ -38,7 +39,16 @@ const ProductDetails = () => {
   return (
     <>
       <ScrollToTop />
-
+      <MetaProduct
+        title={data.attributes.SEO?.title || ""}
+        description={data.attributes.SEO?.description || ""}
+        url={
+          baseUrl +
+          data.attributes.image.data.attributes.formats.thumbnail?.url.substring(
+            1
+          )
+        }
+      />
       <section className="up-top mt-20">
         <div className="container">
           <div className="row">

@@ -4,6 +4,7 @@ import ScrollToTop from "../../../../components/ScrollTop";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getDetailsTec } from "../../../../store/product/action";
+import MetaTechnology from "../../../../MetaTag/TechnologyMeta";
 
 const TechnologyDetails = () => {
   const navigate = useNavigate();
@@ -24,6 +25,11 @@ const TechnologyDetails = () => {
   return (
     <>
       <ScrollToTop />
+      <MetaTechnology
+        title={data.attributes.SEO?.title || ""}
+        description={data.attributes.SEO?.description || ""}
+        url={data.attributes.image.data.attributes.formats.thumbnail?.url || ""}
+      />
       <section className="up-top mt-20">
         <div className="container">
           <div className="row">

@@ -12,6 +12,7 @@ import { FaPlayCircle } from "react-icons/fa";
 
 import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
+import MetaTestimonial from "../../../../MetaTag/TestimoniMeta";
 
 const TestiDetail = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +36,13 @@ const TestiDetail = () => {
   return (
     <>
       <ScrollToTop />
+      <MetaTestimonial
+        title={data.attributes.SEO?.title || ""}
+        description={data.attributes.SEO?.description || ""}
+        url={
+          data.attributes.gambar.data.attributes.formats.thumbnail?.url || ""
+        }
+      />
       <section className="py-10 pb-5 mt-20">
         <div className="container">
           <div className="row justify-content-start">

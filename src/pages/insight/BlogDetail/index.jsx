@@ -19,7 +19,7 @@ const BlogDetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const { data, loading } = useSelector((state) => state.blog);
-  const { entities } = useSelector((state) => state.blog);
+  // const { entities } = useSelector((state) => state.blog);
 
   const fectDetailBlog = async (data) => {
     await dispatch(getDetail(data));
@@ -34,7 +34,11 @@ const BlogDetails = () => {
   return (
     <>
       <ScrollToTop />
-      <BlogMeta />
+      <BlogMeta
+        title={data.attributes.SEO?.title || ""}
+        description={data.attributes.SEO?.description || ""}
+        url={data.attributes.image.data.attributes.formats.thumbnail?.url || ""}
+      />
       <section className="up-top mt-25">
         <div className="container">
           <div className="row">

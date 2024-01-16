@@ -43,11 +43,9 @@ export const productSlice = createSlice({
             },
           },
         },
-        blogMeta: {
-          metaTitle: "",
-          metaDescription: "",
-          keywords: "",
-          preventIndexing: "",
+        SEO: {
+          title: "",
+          description: "",
         },
       },
     },

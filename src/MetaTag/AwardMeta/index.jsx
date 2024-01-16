@@ -1,52 +1,59 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useDispatch, useSelector } from "react-redux";
-import { getAll } from "../../store/product/action";
+import { getAwards } from "../../store/product/action";
 
-const BlogMeta = ({ title, description, url }) => {
-  const { entities } = useSelector((state) => state.blog);
+const MetaAward = ({ title, description, url }) => {
+  const { entities } = useSelector((state) => state.award);
   const dispatch = useDispatch();
   const baseUrl = "www.bintangsempurna.co.id/";
-  const urlFisrt = import.meta.env.VITE_APP_BASEURL;
 
   useEffect(() => {
     const fetchApi = async () => {
-      dispatch(getAll());
+      dispatch(getAwards());
     };
 
     fetchApi();
   }, [dispatch]);
 
-  const renderMetaBlog = () => {
-    return entities.map((data) => {
+  const renderMetaAward = () => {
+    return entities.map(() => {
       const metaTitle = title || "";
       const metaDesc = description || "";
-      const imgUrl = url.substring(1) || "";
+      const imgUrl = url || "";
 
       return (
-        <Helmet key={data.id}>
+        <Helmet>
           <title>{metaTitle}</title>
           <meta name="title" content={metaTitle} />
           <meta name="description" content={metaDesc} />
-          <meta name="robots" content="index, follow" />
-          <meta name="og:url" content={`${baseUrl}insight/blog`} />
-          <meta property="og:image" content={urlFisrt + imgUrl} />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
           <meta property="og:title" content={metaTitle} />
           <meta property="og:description" content={metaDesc} />
+          <meta property="og:image" content={imgUrl} />
+          <meta name="robots" content="index, follow" />
+          <meta name="og:url" content={`${baseUrl}insight/blog`} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
           <meta property="og:site_name" content="Blog" />
           <meta property="og:type" content="Website" />
           <meta name="google" content="nositelinkssearchbox" />
           <meta name="google" content="nopagereadaloud" />
           <meta name="robots" content="notranslate" />
           <meta name="googlebot" content="notranslate" />
+          <meta
+            content="Printing Terlengkap, Cepat dan Berkualitas | Bintang Sempurna"
+            property="twitter:title"
+          ></meta>
+          <meta
+            content="Printing Terlengkap, Cepat dan Berkualitas | Bintang Sempurna"
+            property="twitter:description"
+          ></meta>
         </Helmet>
       );
     });
   };
 
-  return <>{renderMetaBlog()}</>;
+  return <>{renderMetaAward()}</>;
 };
 
-export default BlogMeta;
+export default MetaAward;

@@ -15,6 +15,7 @@ export const sliceRecap = createSlice({
         updatedAt: "",
         publishedAt: "",
         slug: "",
+        id_categories: "",
         image: {
           data: {
             attributes: {
@@ -39,6 +40,10 @@ export const sliceRecap = createSlice({
               title: "",
             },
           },
+        },
+        SEO: {
+          title: "",
+          description: "",
         },
       },
     },

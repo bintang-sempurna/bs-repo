@@ -21,10 +21,6 @@ const AllBlog = () => {
     setFiltered(product.data);
   };
 
-  // const handleProductDetail = (data) => {
-  //   navigate(`/insight/blog/${data}`);
-  // };
-
   const handleProductDetail = (id, category) => {
     navigate(`/insight/blog/${id}?populate=${category}`);
   };
@@ -38,9 +34,7 @@ const AllBlog = () => {
   return (
     <div className="container mt-25">
       <Helmet>
-        <meta charSet="utf-8" />
-        <title> Blog</title>
-        <link rel="canonical" href="#" />
+        <title> Blog </title>
       </Helmet>
       <Filter
         category={category}

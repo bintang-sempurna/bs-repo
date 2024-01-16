@@ -7,6 +7,7 @@ import ReactMarkdown from "react-markdown";
 import SkelParagraf from "../../skelton/paragraf";
 import SkelBanner from "../../skelton/banner/image";
 import ScrollToTop from "../../ScrollTop";
+import MetaAward from "../../../MetaTag/AwardMeta";
 
 const DetailsAward = () => {
   const dispatch = useDispatch();
@@ -26,6 +27,16 @@ const DetailsAward = () => {
   return (
     <>
       <ScrollToTop />
+      <MetaAward
+        title={data.attributes.SEO?.title || ""}
+        description={data.attributes.SEO?.description || ""}
+        url={
+          baseUrl +
+          data.attributes.image.data.attributes.formats.thumbnail?.url.substring(
+            1
+          )
+        }
+      />
       <section className="up-top mt-25">
         <div className="container">
           <div className="row">
