@@ -30,12 +30,7 @@ const DetailsAward = () => {
       <MetaAward
         title={data.attributes.SEO?.title || ""}
         description={data.attributes.SEO?.description || ""}
-        url={
-          baseUrl +
-          data.attributes.image.data.attributes.formats.thumbnail?.url.substring(
-            1
-          )
-        }
+        url={data.attributes.image.data.attributes.formats.thumbnail?.url || ""}
       />
       <section className="up-top mt-25">
         <div className="container">

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Filter from "./Fillter";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import "./styles.css";
 
 const AllRecap = () => {
@@ -39,31 +39,30 @@ const AllRecap = () => {
         activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}
       />
-      <motion.div
-        animate={{ opacity: 1 }}
-        initial={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        layout
-        className="masonry"
-      >
+      <motion.div className="masonry">
         {filtered.map((data) => (
-          <motion.div
-            key={data.id}
-            layout
-            className="mItem"
-            onClick={() => handleProductDetail(data.id, data.attributes.slug)}
-          >
-            <img
-              src={
-                baseUrl +
-                data.attributes.image.data.attributes.formats.medium.url
-              }
-            />
-            <h2 className="paragraf-recap">{data.attributes.title}</h2>
-            <span className="category-icon-recap-detail">
-              {data.attributes.id_categories}
-            </span>
-          </motion.div>
+          <AnimatePresence>
+            <motion.div
+              key={data.id}
+              layout
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="mItem"
+              onClick={() => handleProductDetail(data.id, data.attributes.slug)}
+            >
+              <img
+                src={
+                  baseUrl +
+                  data.attributes.image.data.attributes.formats.medium.url
+                }
+              />
+              <h2 className="paragraf-recap">{data.attributes.title}</h2>
+              <span className="category-icon-recap-detail">
+                {data.attributes.id_categories}
+              </span>
+            </motion.div>
+          </AnimatePresence>
         ))}
       </motion.div>
     </div>

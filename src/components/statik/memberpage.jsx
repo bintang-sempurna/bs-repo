@@ -54,7 +54,11 @@ const Memberpage = () => {
           </div>
           <div className="col-sm">
             <div className="img-apps">
-              <img src={ImgApps} className="apps-membership" />
+              <img
+                src={ImgApps}
+                className="apps-membership"
+                alt="member-image"
+              />
             </div>
           </div>
         </div>

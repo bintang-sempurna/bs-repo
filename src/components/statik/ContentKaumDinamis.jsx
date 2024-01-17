@@ -21,7 +21,7 @@ const ContentKaumDinamis = () => {
     <>
       <section className="py-20 pb-5">
         <Container>
-          <img src={ElipseSvg} className="home-about-shape3" />
+          <img src={ElipseSvg} className="home-about-shape3" alt="Elipsesvg" />
           <div className="container">
             {/* <div className="row justify-content-start">
               <div className="col-md-6 col-12 d-flex align-items-center">

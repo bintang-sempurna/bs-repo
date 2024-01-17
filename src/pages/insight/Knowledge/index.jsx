@@ -6,16 +6,22 @@ import mediaPostPress from "./../../../assets/img/svg/post-press.svg";
 import SliderKategori from "../../../components/allslider/SliderKategori";
 import sldKaT from "../../../dataMock/kategoriLink.json";
 import ScrollToTop from "../../../components/ScrollTop";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
+import { Cursor } from "react-simple-typewriter";
 
 const KnowledgePage = () => {
+  const onClick = () => {
+    navigate(`/insight/knowledge/${id}`);
+  };
+
   return (
     <>
-     <Helmet>
-                <meta charSet="utf-8" />
-                <title> Knowledge Printing</title>
-                <link rel="canonical" href="#" />
-            </Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Knowledge Printing</title>
+        <link rel="canonical" href="#" />
+      </Helmet>
       <ScrollToTop />
       <section className="py-25 position-relative bg-red-bs mt-20">
         <div className="container">
@@ -41,19 +47,18 @@ const KnowledgePage = () => {
         <div className="container">
           <div className="row justify-content-center how-it-work-section-row">
             <div className="col-md-3 col-6 mb-10">
-              <div className="how-it-works-box">
+              <div
+                className="how-it-works-box"
+                onClick={() => onClick()}
+                style={{ cursor: "pointer" }}
+              >
                 <img src={mediaSub} className="icon-know" />
                 <h2 className="coodiv-text-7">Media/Substrate</h2>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.{" "}
                 </p>
-                <a
-                  href="Knowledge_detail.html"
-                  className="btn coodiv-text-11 mt-5 rounded-pill"
-                >
-                  Lihat
-                </a>
+                <a className="btn coodiv-text-11 mt-5 rounded-pill">Lihat</a>
               </div>
             </div>
             <div className="col-md-3 col-6 mb-10">

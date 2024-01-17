@@ -26,9 +26,9 @@ const TechnologyDetails = () => {
     <>
       <ScrollToTop />
       <MetaTechnology
-        title={data.attributes.SEO?.title || ""}
-        description={data.attributes.SEO?.description || ""}
-        url={data.attributes.image.data.attributes.formats.thumbnail?.url || ""}
+          title={data.attributes.SEO?.title || ""}
+          description={data.attributes.SEO?.description || ""}
+          url={data.attributes.image.data.attributes.formats.thumbnail?.url || ""}
       />
       <section className="up-top mt-20">
         <div className="container">

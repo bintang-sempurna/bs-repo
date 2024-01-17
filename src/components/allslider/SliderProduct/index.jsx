@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Nav } from "react-bootstrap";
 import AllProduct from "../../../assets/img/contentStatic/all_Product.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,10 +10,13 @@ import { FaShoppingCart } from "react-icons/fa";
 
 import { useDispatch, useSelector } from "react-redux";
 import { getLinkProduct } from "../../../store/product/action";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SliderProduct = () => {
   const { entities, loading } = useSelector((state) => state.link);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const fetchApi = async () => {
     dispatch(getLinkProduct());
@@ -22,6 +25,10 @@ const SliderProduct = () => {
   useEffect(() => {
     fetchApi();
   }, []);
+
+  const linkOp = () => {
+    navigate(`https://onlineprint.co.id/`);
+  };
 
   const baseUrl = import.meta.env.VITE_APP_BASEURL;
 
@@ -42,6 +49,7 @@ const SliderProduct = () => {
                     1
                   )
                 }
+                alt={data.attributes.alt}
               />
               <div className="title_product">
                 <h2 className="coodiv-text-8 font-weight-bold mb-0">
@@ -107,9 +115,15 @@ const SliderProduct = () => {
         <SwiperSlide>
           <div className="modpack-box-header ">
             <div className="modpack-product">
-              <a href="https://onlineprint.co.id/">
-                <img className="img__all" src={AllProduct} />
-              </a>
+              <Nav.Link>
+                <img
+                  as={Link}
+                  className="img__all"
+                  alt="image onlineprint"
+                  src={AllProduct}
+                  onClick={() => linkOp()}
+                />
+              </Nav.Link>
             </div>
           </div>
         </SwiperSlide>

@@ -28,19 +28,23 @@ const MetaTestimonial = ({ title, description, url }) => {
           <title>{metaTitle}</title>
           <meta name="title" content={metaTitle} />
           <meta name="description" content={metaDesc} />
-          <meta name="robots" content="index, follow" />
-          <meta name="og:url" content={`${baseUrl}insight/blog`} />
-          <meta property="og:image" content={urlFisrt + imgUrl} />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
+
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:url"
+            content={`${baseUrl}insight/blog/${data.id}?populate=`}
+          />
           <meta property="og:title" content={metaTitle} />
           <meta property="og:description" content={metaDesc} />
-          <meta property="og:site_name" content="Blog" />
-          <meta property="og:type" content="Website" />
-          <meta name="google" content="nositelinkssearchbox" />
-          <meta name="google" content="nopagereadaloud" />
-          <meta name="robots" content="notranslate" />
-          <meta name="googlebot" content="notranslate" />
+          <meta property="og:image" content={urlFisrt + imgUrl} />
+          <meta property="og:image:width" content="500" />
+          <meta property="og:image:height" content="252" />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content={`${baseUrl}insight/blog`} />
+          <meta property="twitter:title" content={metaTitle} />
+          <meta property="twitter:description" content={metaDesc} />
+          <meta property="twitter:image" content={urlFisrt + imgUrl} />
         </Helmet>
       );
     });

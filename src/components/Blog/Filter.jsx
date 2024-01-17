@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo } from "react";
+import { motion } from "framer-motion";
 
 function Filter({ setActiveCategory, activeCategory, setFiltered, category }) {
   // Extract unique categories using useMemo to avoid unnecessary recalculations
@@ -27,7 +28,14 @@ function Filter({ setActiveCategory, activeCategory, setFiltered, category }) {
   }, [activeCategory, category, uniqueCategories]);
 
   return (
-    <div className="filter-container">
+    <motion.div
+      // animate={{ opacity: 1 }}
+      // initial={{ opacity: 1 }}
+      // exit={{ opacity: 0 }}
+      // transition={{ delay: 0.1, duration: 1.5 }}
+      // layout
+      className="filter-container"
+    >
       {uniqueCategories.map((categoryName, index) => (
         <button
           key={index}
@@ -37,7 +45,7 @@ function Filter({ setActiveCategory, activeCategory, setFiltered, category }) {
           {categoryName}
         </button>
       ))}
-    </div>
+    </motion.div>
   );
 }
 

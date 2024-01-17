@@ -27,7 +27,11 @@ const FooterContent = () => {
             </div>
             <div className="col-sm">
               <div className="img-apps">
-                <img className="Footer_image" src={imgFooterEvent} />
+                <img
+                  className="Footer_image"
+                  src={imgFooterEvent}
+                  alt="image"
+                />
               </div>
             </div>
           </div>

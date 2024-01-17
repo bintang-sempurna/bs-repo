@@ -19,24 +19,24 @@ const ButtonChat = () => {
           </label>
           <div className="fab-wheel">
             <a className="fab-action fab-action-1" data-tooltip="Email">
-              <img src={iconCS} />
+              <img src={iconCS} alt="iamge-cs" />
             </a>
             <a
               href="https://bintangsempurna.co.id/appointment/"
               className="fab-action fab-action-2"
               data-tooltip="appointment"
             >
-              <img src={iconAppointment} />
+              <img src={iconAppointment} alt="image-appointment" />
             </a>
             <a
               href="https://onlineprint.co.id/"
               className="fab-action fab-action-3"
               data-tooltip="onlineprint.co.id"
             >
-              <img src={iconOP} />
+              <img src={iconOP} alt="image-op" />
             </a>
             <a className="fab-action fab-action-4" data-tooltip="Sales">
-              <img src={iconSales} />
+              <img src={iconSales} lt="" />
             </a>
           </div>
         </div>

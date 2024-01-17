@@ -28,7 +28,11 @@ const TemukanSec = () => {
     <>
       <section className="mt-3 py-10">
         <Container>
-          <img src={svgStatic1} className="home-about-shape" />
+          <img
+            src={svgStatic1}
+            className="home-about-shape"
+            alt="circle image"
+          />
           <Row className="">
             {/* <Col lg={6}>
               <div className="d-flex align-items-center">

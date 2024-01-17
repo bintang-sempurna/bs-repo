@@ -6,7 +6,7 @@ import { getProductDetail } from "../../../store/product/action";
 import ReactMarkdown from "react-markdown";
 import SliderVideo from "../../../components/allslider/SliderVideo";
 import SliderBlog from "../../../components/allslider/SliderBlog";
-import VideoProduct from "../../../components/ProductAndService/VideoProduct";
+
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -31,9 +31,7 @@ const ProductDetails = () => {
   }, [id]);
 
   const baseUrl = import.meta.env.VITE_APP_BASEURL;
-
   const currentDomain = window.location.origin;
-
   const productUrl = `${currentDomain}/product/${id}?populate=${data.attributes.slug}`;
 
   return (
@@ -42,12 +40,7 @@ const ProductDetails = () => {
       <MetaProduct
         title={data.attributes.SEO?.title || ""}
         description={data.attributes.SEO?.description || ""}
-        url={
-          baseUrl +
-          data.attributes.image.data.attributes.formats.thumbnail?.url.substring(
-            1
-          )
-        }
+        url={data.attributes.image.data.attributes.formats.thumbnail?.url || ""}
       />
       <section className="up-top mt-20">
         <div className="container">
@@ -74,7 +67,7 @@ const ProductDetails = () => {
                   data.attributes.image.data.attributes.formats.medium.url.substring(
                     1
                   )
-                } // Set the image for the share
+                } 
               >
                 <WhatsappIcon size={32} round={true} />
               </WhatsappShareButton>

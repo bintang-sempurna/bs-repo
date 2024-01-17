@@ -52,9 +52,8 @@ const LebihCepat = () => {
                     >
                       powered by :
                     </p>
-                    <a href="#">
-                      <img src={LogoOp} alt="" />
-                    </a>
+
+                    <img src={LogoOp} alt="" width={50} />
                   </div>
                 </div>
                 <a

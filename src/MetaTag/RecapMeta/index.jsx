@@ -7,6 +7,7 @@ const RecapMeta = ({ title, description, url }) => {
   const { entities } = useSelector((state) => state.recap);
   const dispatch = useDispatch();
   const baseUrl = "www.bintangsempurna.co.id/";
+  const urlFisrt = import.meta.env.VITE_APP_BASEURL;
 
   useEffect(() => {
     const fetchApi = async () => {
@@ -28,27 +29,23 @@ const RecapMeta = ({ title, description, url }) => {
           <title>{metaTitle}</title>
           <meta name="title" content={metaTitle} />
           <meta name="description" content={metaDesc} />
+
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:url"
+            content={`${baseUrl}insight/blog/${data.id}?populate=`}
+          />
           <meta property="og:title" content={metaTitle} />
           <meta property="og:description" content={metaDesc} />
-          <meta property="og:image" content={imgUrl} />
-          <meta name="robots" content="index, follow" />
-          <meta name="og:url" content={`${baseUrl}insight/blog`} />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
-          <meta property="og:site_name" content="Blog" />
-          <meta property="og:type" content="Website" />
-          <meta name="google" content="nositelinkssearchbox" />
-          <meta name="google" content="nopagereadaloud" />
-          <meta name="robots" content="notranslate" />
-          <meta name="googlebot" content="notranslate" />
-          <meta
-            content="Printing Terlengkap, Cepat dan Berkualitas | Bintang Sempurna"
-            property="twitter:title"
-          ></meta>
-          <meta
-            content="Printing Terlengkap, Cepat dan Berkualitas | Bintang Sempurna"
-            property="twitter:description"
-          ></meta>
+          <meta property="og:image" content={urlFisrt + imgUrl} />
+          <meta property="og:image:width" content="500" />
+          <meta property="og:image:height" content="252" />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content={`${baseUrl}insight/blog`} />
+          <meta property="twitter:title" content={metaTitle} />
+          <meta property="twitter:description" content={metaDesc} />
+          <meta property="twitter:image" content={urlFisrt + imgUrl} />
         </Helmet>
       );
     });

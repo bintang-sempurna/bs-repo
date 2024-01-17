@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 import { getDetail } from "../../../store/product/action";
 import FooterContentOp from "../../../components/statik/FooterContentOp";
 import ReactMarkdown from "react-markdown";
@@ -14,12 +14,20 @@ import SkelBanner from "../../../components/skelton/banner/image";
 import SkelParagraf from "../../../components/skelton/paragraf";
 import BlogMeta from "../../../MetaTag/BlogMeta";
 
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+} from "react-share";
+
 const BlogDetails = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const dispatch = useDispatch();
   const { data, loading } = useSelector((state) => state.blog);
   // const { entities } = useSelector((state) => state.blog);
+  const location = useLocation();
 
   const fectDetailBlog = async (data) => {
     await dispatch(getDetail(data));
@@ -30,6 +38,8 @@ const BlogDetails = () => {
   }, [id]);
 
   const baseUrl = import.meta.env.VITE_APP_BASEURL;
+  const currentDomain = window.location.origin;
+  const productUrl = `${currentDomain}/insight/blog/${id}?populate=${data.attributes.slug}`;
 
   return (
     <>
@@ -38,11 +48,39 @@ const BlogDetails = () => {
         title={data.attributes.SEO?.title || ""}
         description={data.attributes.SEO?.description || ""}
         url={data.attributes.image.data.attributes.formats.thumbnail?.url || ""}
+        slug={data.attributes?.slug ?? ""}
       />
       <section className="up-top mt-25">
         <div className="container">
           <div className="row">
-            <div className="col-lg-2"></div>
+            <div className="col-lg-2">
+              <span>Share :</span>
+              <FacebookShareButton
+                className="p-2"
+                hashtag="#BintangSempurna"
+                quote="terimakasih ya"
+                url={productUrl}
+              >
+                <FacebookIcon size={32} round={true} />
+              </FacebookShareButton>
+              <WhatsappShareButton
+                className="p-2"
+                size={32}
+                round={true}
+                title="Aku udah baca artikel ini di Blog Bintang Sempurna, lho! Baca juga deh, ada tips buat print online, teknologi print terkini, dan info promo terbaru. "
+                hashtag="#BintangSempurna"
+                url={productUrl}
+                // image={
+                //   baseUrl
+                //   +
+                //   data.attributes.image.data.attributes.formats.medium.url.substring(
+                //     1
+                //   )
+                // }
+              >
+                <WhatsappIcon size={32} round={true} />
+              </WhatsappShareButton>
+            </div>
             <div className="col-lg-8">
               <div className="the_breadcrumb_conatiner_page">
                 <div className="the_breadcrumb">

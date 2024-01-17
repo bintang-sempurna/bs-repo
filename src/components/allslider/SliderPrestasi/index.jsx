@@ -63,6 +63,7 @@ const SliderPrestasi = () => {
                   1
                 )
               }
+              alt={data.attributes.alt}
             />
             <Card.Body>
               <span className="category-icon-name__award">

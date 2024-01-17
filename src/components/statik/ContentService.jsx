@@ -9,7 +9,7 @@ const ContentService = () => {
   return (
     <>
       <section className="py-5 ">
-        <img src={ElipsNih} className="home-about-shape4" />
+        <img src={ElipsNih} className="home-about-shape4" alt="elipse" />
         <div className="container">
           <h1 className="coodiv-text-4 font-weight-bold text-center">
             Keutamaan Layanan kami

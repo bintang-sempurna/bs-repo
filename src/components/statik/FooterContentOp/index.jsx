@@ -29,7 +29,11 @@ const FooterContentOp = () => {
             </div>
             <div className="col-sm">
               <div className="img-apps">
-                <img className="footer-class-op" src={imgContentOP} />
+                <img
+                  className="footer-class-op"
+                  src={imgContentOP}
+                  alt="image"
+                />
               </div>
             </div>
           </div>

@@ -100,7 +100,10 @@ const Footer = () => {
                 <h2 className="quiq-links-footer-title">
                   Member Sobat Bintang
                 </h2>
-                <a href="https://play.google.com/store/search?q=sobat%20bintang&c=apps&hl=id-ID">
+                <a
+                  href="https://play.google.com/store/search?q=sobat%20bintang&c=apps&hl=id-ID"
+                  aria-label="link"
+                >
                   <img src={dowloadImg} alt="" />
                 </a>
                 <span>Download Sekarang dan Dapatkan keuntungannya !!</span>
@@ -124,11 +127,11 @@ const Footer = () => {
           </div>
           <div className="mr-tp-40 row justify-content-between footer-area-under">
             <div className="col-md col-12 d-flex align-items-center">
-              <a href="#">
-                <img className="footer-logo-blue" src={logoFooter} alt="" />
-              </a>
+              <img className="footer-logo-blue" src={logoFooter} alt="" />
+
               <div className="footer-social-icons">
                 <a
+                  Link="link"
                   className="icon-social"
                   target="_blank"
                   href="https://www.facebook.com/bintangsempurna/"

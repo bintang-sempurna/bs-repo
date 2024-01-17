@@ -20,6 +20,7 @@ import TechnologyDetails from "../pages/insight/Technology/TecnologyDetails";
 import TestiDetail from "../components/statik/testimoni/Details";
 import DetailsAward from "../components/awardPage/DetailsAward";
 import NotFound from "../components/notFount";
+import KnowledDetail from "../components/KnowledgeDetail";
 
 const router = createBrowserRouter([
   {
@@ -95,6 +96,10 @@ const router = createBrowserRouter([
       {
         path: "/insight/knowledge",
         element: <KnowledgePage />,
+      },
+      {
+        path: "/insight/knowledge:id",
+        element: <KnowledDetail />,
       },
       {
         path: "/insight/blog",

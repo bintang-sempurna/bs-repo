@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { useDispatch, useSelector } from "react-redux";
 import { getAll } from "../../store/product/action";
 
-const BlogMeta = ({ title, description, url }) => {
+const BlogMeta = ({ title, description, url, slug }) => {
   const { entities } = useSelector((state) => state.blog);
   const dispatch = useDispatch();
   const baseUrl = "www.bintangsempurna.co.id/";
@@ -22,25 +22,33 @@ const BlogMeta = ({ title, description, url }) => {
       const metaTitle = title || "";
       const metaDesc = description || "";
       const imgUrl = url.substring(1) || "";
+      const metaSlug = slug || "";
 
       return (
         <Helmet key={data.id}>
+          {/* <!-- Primary Meta Tags --> */}
           <title>{metaTitle}</title>
           <meta name="title" content={metaTitle} />
           <meta name="description" content={metaDesc} />
-          <meta name="robots" content="index, follow" />
-          <meta name="og:url" content={`${baseUrl}insight/blog`} />
-          <meta property="og:image" content={urlFisrt + imgUrl} />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
+          {/* 
+        <!-- Open Graph / Facebook --> */}
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:url"
+            content={`${baseUrl}insight/blog/${data.id}?populate=${metaSlug}`}
+          />
           <meta property="og:title" content={metaTitle} />
           <meta property="og:description" content={metaDesc} />
-          <meta property="og:site_name" content="Blog" />
-          <meta property="og:type" content="Website" />
-          <meta name="google" content="nositelinkssearchbox" />
-          <meta name="google" content="nopagereadaloud" />
-          <meta name="robots" content="notranslate" />
-          <meta name="googlebot" content="notranslate" />
+          <meta property="og:image" content={urlFisrt + imgUrl} />
+          <meta property="og:image:width" content="500" />
+          <meta property="og:image:height" content="252" />
+
+          {/* <!-- Twitter --> */}
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content={`${baseUrl}insight/blog`} />
+          <meta property="twitter:title" content={metaTitle} />
+          <meta property="twitter:description" content={metaDesc} />
+          <meta property="twitter:image" content={urlFisrt + imgUrl} />
         </Helmet>
       );
     });
